@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Hello, World!</title>
+    <link rel="stylesheet" type= "text/css" href="style.css"></link>
+</head>
+<body>
+    <header>
+        <h1>Sangeeth Reddy, Python Full-Stack Developer</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>
+        </nav>
+
+<!--        navigation button when width is less than 900px-->
+        <div id="nav-btn">
+            <button type="submit" id="menu-button" onclick="display_menu(this)">
+                <div class="hamburger">
+                    <div class="bar">-</div>
+                    <div class="bar">-</div>
+                    <div class="bar">-</div>
+                </div>
+            </button>
+        </div>
+        <button type="submit" id="close-btn" onclick="display_menu(this)">X</button>
+    </header>
+
+    <section id="about">
+        <h2>About me</h2>
+        <img src="images/person.jpg">
+        <p>I am fullstack python developer. Found interest in coding. Hence, doing
+        it from a long time</p>
+    </section>
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div id="projects">
+        <div>
+            <img id="project-1" src="images/project1.png">
+            <p>Flashcards</p>
+            <button class="open-window" type="submit" onclick="pop_up()">Know More</button>
+        </div>
+        <div>
+            <img src="images/project2.png">
+            <p>Virtual Piano</p>
+            <button class="open-window" type="submit" onclick="pop_up()">Know More</button>
+        </div>
+        </div>
+    </section>
+
+<!--    pop-up window when know more is clicked -->
+    <section id="popup-sec">
+        <div class="window">
+            <h1>Flashcards</h1>
+            <p>I did this project when I was studying frontend on hyperskill. I created
+            a webpage with flip-down flash cards, learned some HTML basics and learned
+            that CSS can easily make a beautiful design.</p>
+            <button id="popup-btn" onclick="close_popup()">close</button>
+        </div>
+    </section>
+    <section id="contacts">
+        <h1>Contacts</h1>
+        <p><b>Phone no</b>: 5197786138</p>
+        <p><b>Email_id</b>: aletisangeeth.reddy@gmail.com</p>
+    </section>
+
+    <footer>
+        Try decreasing the width of the screen.
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

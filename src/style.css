@@ -1,0 +1,140 @@
+#project-1 {
+    width: 230px;
+    height: 150px;
+    margin-right: 30px;
+}
+nav a {
+    display: block;
+    cursor: pointer;
+    text-decoration: none ;
+    color: olivedrab;
+}
+#nav-btn {
+    display: none;
+}
+
+section div {
+    text-align: center;
+}
+.open-window {
+    background-color: mediumpurple;
+    opacity: 0.5;
+    border: none;
+    border-radius: 10px;
+}
+ul li {
+    color: black;
+}
+
+#projects {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    width: 60%;
+}
+header {
+    height: 25vh;
+}
+body {
+    background-image: url("https://wallpaperaccess.com/full/5651999.jpg");
+    background-size: cover;
+    color: white;
+}
+footer {
+    height: 15vh;
+    opacity: 0.5;
+    padding-top: 20px;
+}
+#close-btn {
+    display: none;
+}
+
+
+#popup-sec {
+    position: relative;
+    text-align: center;
+    color: black;
+}
+.window {
+    position: absolute;
+    width: 50%;
+    top: -250px;
+    left: 50%;
+    height: 40vh;
+    border: 3px solid black;
+    transform: translate(-50%, -50%);
+    font-style: italic;
+    border-radius: 15px;
+    background: gainsboro;
+    display: none;
+}
+
+#popup-btn {
+    background: black;
+    height: 15%;
+    width: 15%;
+    color: white;
+    margin-top: 5%;
+    border-radius: 10px;
+}
+
+.hamburger {
+    display: none;
+}
+
+@media screen and (max-width: 899px) {
+    nav {
+        display: none;
+    }
+    #nav-btn {
+        display: block;
+        position: fixed;
+        top: 5px;
+        right: 0;
+    }
+    #menu-button {
+        background-color: lightgoldenrodyellow;
+        border: none;
+    }
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 10px;
+        height: 24px;
+    }
+
+    .bar {
+        width:20px;
+        height:5px;
+    }
+
+    .menu-detail {
+        display: block;
+        position: absolute;
+        top: 5px;
+        right: 0;
+        background-color: lightgoldenrodyellow;
+        height: 40%;
+        width: 30%;
+        text-align: center;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100%;
+        background-color: gainsboro;
+        margin: 0;
+    }
+    #close-btn {
+        position: absolute;
+        top:5px;
+        right: 0;
+        background-color: gainsboro;
+        border: none;
+    }
+
+}
